@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart</title>
+    <style>
+    .a{
+      background-color: aqua;
+      border: none;
+      border-radius: 5px;
+    }
+    .b{
+      color: brown;
+      background-color: rgb(245, 236, 64);
+  
+      border-radius: 5px;
+    }
+    .c{
+      color: azure;
+      background-color: rgb(234, 128, 242);
+      border: none;
+      border-radius: 5px;
+    }
+    .d{
+      background-color: aqua;
+      border:none;
+      border-radius: 5px;
+    }
+    </style>
+  </head>
+  <body>
+    <button class=a onclick="
+    console.log('Cart Quantity:' +cartQuantity);
+    ">Show Quantity</button>
+    <button class=b onclick="
+    cartQuantity=cartQuantity+1
+    console.log('Cart Quantity:' +cartQuantity)"
+    >Add to Cart</button>
+    <button class=c onclick=
+    "cartQuantity=cartQuantity+2
+    console.log('Cart Quantity:' +cartQuantity)"> +2 </button>
+    <button class=c onclick="
+    cartQuantity=cartQuantity+3
+    console.log('Cart Quantity:' +cartQuantity)"> +3</button>
+    <button class=d onclick="
+    cartQuantity=0
+    console.log('Cart Quantity was Reset' )"> Reset Cart</button>
+
+    <script>
+    let cartQuantity=0;
+    </script>
+  
+  </body>
+</html>
