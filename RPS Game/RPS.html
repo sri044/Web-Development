@@ -19,7 +19,9 @@
           margin: 10px;
           
         }
-        
+        body{
+          text-align: center;
+        }
         
         .para{
           font-weight: bold ;
@@ -41,7 +43,7 @@
           font-size: 20px;
           font-family: Arial;
           font-weight: bold;
-          padding-left: 30px;
+          
         }
 
         .picks{
@@ -51,16 +53,28 @@
         }
 
         .reset-button{
+          
           font-size: 18px;
           padding: 8px 14px;
           border: none;
           margin-top: 25px;
+          border-radius: 10px;
+        }
+
+        .reset>button:hover{
+          scale: 107%;
+          background-color: rgba(50, 112, 220, 0.803);
+          color: antiquewhite;
         }
 
         .score{
           color: aliceblue;
           font-family: Arial;
           margin-top: 30px;
+        }
+
+        .sizing:hover{
+          scale: 120%;
         }
       </style>
       <p class="para">Rock Papers and Scissor</p>
@@ -81,6 +95,7 @@
 
       <p class="js-liveUpdate score"></p>
 
+      <div class="reset">
       <button class="reset-button" onclick=" 
       score.wins=0
       score.losses=0
@@ -88,7 +103,7 @@
       localStorage.removeItem('localScore')
       liveUpdateScore()"
       >Reset Score</button>
-
+      </div>
 
       <Script>
 
@@ -110,7 +125,7 @@
 
           if(playerPick==='Rock'){
               if(computerPick==='Rock'){
-                  result='Tie'
+                  result='It\'s a Tie'
               }
               else if (computerPick==='Paper'){
                 result='You Lose'
@@ -125,7 +140,7 @@
                   result='You Win'
               }
               else if (computerPick==='Paper'){
-                result='Tie'
+                result='It\'s a Tie'
               }
               else if (computerPick === 'Scissor'){
                 result='You Lose'
@@ -140,7 +155,7 @@
                 result='You Win'
               }
               else if (computerPick === 'Scissor'){
-                result='Tie'
+                result='It\'s a Tie'
               }
         }
 
