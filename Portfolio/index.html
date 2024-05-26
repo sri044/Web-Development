@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="port.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Charan's Profolio</title>
+
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <!-- <i class="fa-solid fa-bars" id="Menu-icon"></i> -->
+    
+      <nav class="navbar">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="" id="Menu-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#">Skills</a></li> -->
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+      </ul>
+        <ul>
+          <li class="hideOnmobile"><a href="#" class="active">Home</a></li>
+          <li class="hideOnmobile"><a href="#about">About</a></li>
+          <li class="hideOnmobile"><a href="#">Skills</a></li>
+          <li class="hideOnmobile"><a href="#portfolio">Portfolio</a></li>
+          <li class="hideOnmobile"><a href="#contact">Contact</a></li>
+          <li onclick="showSidebar()"><a href="#" class="Menu-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+      </nav>
+  </header>
+
+  <!--Home-Section-->
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hi, Myself</h3>
+      <h1>Kota Sri Charan</h1>
+      <h3>And I'm a <span class="text">Frontend Developer</span></h1>
+      <p>I am an Graduate from Mechnaical Engineering <br> who is passionate in Building Responsive Websites. I  have Strong Knowledge in  Core and Advanced Java</p>
+      <div class="social-media">
+        <a href="https://github.com/sri044" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sri-charan-kota-a636061aa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      
+        <a href="" class="btn">Download CV</a>
+      
+    </div>
+
+    
+
+    <div class="home-img"><img src="port.png
+    " alt=""></div>
+  </section>
+
+<!--About-Section-->
+  <section class="about" id="about">
+    <div class="about-img">
+        <img src="port.png" alt="">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">About<span> Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>I am a passionate and dedicated frontend developer with a strong foundation in web technologies. Coming from a mechanical background, I have discovered a deep interest in frontend development and am eager to apply my skills in HTML, CSS, and JavaScript to create engaging and user-friendly websites. As a fresher, I am committed to continuous learning and staying updated with the latest industry trends. My goal is to contribute to innovative projects and collaborate with talented teams to build exceptional digital experiences.</p>
+      
+    </div>
+    
+  </section>
+
+  <!-- Portfolio-section-->
+<section class="portfolio" id="portfolio">
+  <h2 class="heading">Latest <span>Projects</span></h2>
+  <div class="portfolio-container">
+
+    <div class="portfolio-box">
+      <img src="RPG.jpg" alt=""><
+      <div class="portfolio-layer">
+        <h4>Rock Paper Scissor</h4>
+      <p>The Game is made on Webpage using HTML, CSS and JavaScript</p>
+      <a href="https://rock-paper-scissors-bycharan.netlify.app/" target="_blank"></a><i class="fa-solid fa-up-right-from-square"></i></a>
+      </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="calci.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Calculator</h4>
+        <p>The Calculator is made on Webpage using HTML, CSS and JavaScript</p>
+        <a href="/calci/calci.html" target="_blank"></a><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+  <!--contact-Section-->
+  <section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <form action="#">
+    <div class="contact-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email">
+    </div>
+
+    <div class="contact-box">
+      <input type="number" placeholder="Mobile number">
+      <input type="text" placeholder="Email subject">
+    </div>
+
+    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+  </section>
+
+
+
+<script src="port.js"></script>
+
+</body>
+</html>
