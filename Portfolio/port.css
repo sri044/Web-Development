@@ -38,6 +38,8 @@ body{
 }
 
 
+
+
 .header{
   position: fixed;
   top: 0;
@@ -343,6 +345,7 @@ span{
 
 }
 
+
 .portfolio-box .portfolio-layer{
   position: absolute;
   
@@ -383,6 +386,10 @@ span{
 
 .portfolio-layer a i{
   font-size: 2rem;
+  color: var(--text-color);
+}
+
+.portfolio-layer a i:hover{
   color: var(--snd-bg-color);
 }
 
